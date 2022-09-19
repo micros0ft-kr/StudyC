@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+double line1, line2, round, area;
+	// 사용자로부터 너비와 높이를 입력받는다.
+	// 입력받기 전 "사각형 두 변의 길이를 입력하세요: "라는 안내문구를 출력한다.
+printf("사각형 두 변의 길이를 입력하세요: ");
+scanf("%lf%lf",&line1,&line2);
+	// 사각형의 둘레와 면적을 계산한다.
+round = line1*2 + line2*2;
+area = line1*line2;
+	// 둘레는 너비와 높이 합의 2배이며, 면적은 너비 곱하기 높이 이다.
+
+	// 연산 결과를 출력한다.
+printf("입력하신 사각형의 둘레는 %lf 이고, 면적은 %lf 입니다.", round, area);
+	// 출력할 때는 "입력하신 사각형의 둘레는 xx.xxxxxx 이고, 면적은 xx.xxxxxx 입니다." 형태의 문장을 사용한다.
+	
+	return 0;
+}

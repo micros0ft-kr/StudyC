@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int get_integer(void);
+
+int main(void) {
+	int input = get_integer();
+	printf("입력받는 값은 %d 입니다.\n", input);
+	return 0;
+}
+
+
+int get_integer(void){
+	int input;
+	scanf("%d", &input);
+	return input;
+}

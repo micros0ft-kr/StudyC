@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+void to_binary(int n){
+	int quotient, remainder;
+	quotient = n/2;
+	remainder = n%2;
+	if (quotient != 0) {
+		to_binary(quotient);
+		printf("%d", remainder);
+	}
+	else printf("%d", remainder);
+}
+
+int main(void) {
+	int n;
+	printf("Input a number.\n");
+	scanf("%d", &n);
+	to_binary(n);
+	return 0;
+}
